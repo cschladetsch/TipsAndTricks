@@ -1,6 +1,12 @@
 
 # Bash Shell Commands
 
+## Get your Ip Address
+
+There are better ways, but this works:
+
+	$ ifconfig | grep inet 
+
 ## mv
 
 Ever wanted to make a folder structure like Proj/Foo?
@@ -20,21 +26,31 @@ Does it all in one go.
 
 You can do pretty much everything with *find* and a few pipes.
 
+* Ignore all folders that start with .
+* Ignore a given set of folders
+* Exclude a pattern match
+
 ## sort
+**Too many to list, trying to break it down well**
 
 ## du
 
+**Too many to list, trying to break it down well**
+
 ## grep
+**Too many to list, trying to break it down well**
+
 Patern search with or without case sensitivity.
 
 ## ln
+**Too many to list, trying to break it down well**
+
 Make symbolic links.
 
 ## which
 
 	$ which `python`
-Tells you what command will be executed when you enter *python* at the command line.
-
+Tells you what command will be executed when you enter *python at the command line.
 
 
 # Redirect errors to null

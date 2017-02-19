@@ -6,6 +6,20 @@ I am not an expert at all. This is just where I am keeping some tips I've found 
 
 You may want to start with reading from [someone who knows](https://github.com/git-tips/tips#show-helpful-guides-that-come-with-git).
 
+## Reset origin from local
+
+So, you've done some work and pushed to remote and all good. Then you do some more work and screw everything up - but you already pushed the changes.
+
+What to do?
+
+There are many ways to deal with this. My favorite is to just get the local state back to where you want it to be (ie, before you screwed up and pushed the bad changes). Then just:
+
+	git push -f origin [branch-name]
+	
+Ths will force your current branch over the remote branch.
+
+Use with care: I use this only when I screw up, and don't want to muck about with reverting commits etc.
+
 ## Basics
 Just type these in every now and then:
 

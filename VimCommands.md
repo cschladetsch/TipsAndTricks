@@ -7,6 +7,17 @@ I know/knew all these, but keep forgetting to use them, so I started maintaining
 
 **Note** *that not all Vims, especially plugins to IDEs, provide all Vim commands.*
 
+## Delete all lines that match a pattern
+
+See [here](http://vim.wikia.com/wiki/Delete_all_lines_containing_a_pattern) for details, but the basics are:
+
+	:g/pattern/d
+	
+To delete all blank lines:
+
+	:g/^$/d
+	:g/^\s*$/d	# all lines that are just whitespace
+
 ## Don't Leave Insert Mode as Much
 You may well jump between normal and insert modes a lot. Here's some tips to avoid the context swaps:
 
@@ -17,6 +28,12 @@ You may well jump between normal and insert modes a lot. Here's some tips to avo
 ### Inserting yanked text
 * To insert the current contents of the copy buffer while in insert mode, press **`^R"`**
 * To insert contents of a register, say register 'a' while in insert mode, press **`^Ra`**
+
+## Showing previous copy buffers
+
+	:registers
+	
+Shows all previous yanked text with associated register numbers.
 
 ## Word searching under cursor
 
